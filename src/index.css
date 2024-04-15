@@ -1,0 +1,87 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+.ant-menu-dark{
+  background-color: #008080 !important;
+}
+.ant-layout-sider{
+  flex: 0 0 250px !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+  width: 250px !important;
+  background-color: #008080 !important;
+}
+.ant-layout-sider-collapsed {
+  flex: 0 0 80px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+  width: 80px !important;
+  background-color: #008080 !important;
+}
+.sm-logo{
+  display: none;
+}
+.ant-layout-sider-collapsed .sm-logo{
+  display: block;
+}
+.ant-layout-sider-collapsed .lg-logo {
+  display: none;
+}
+.ant-menu-item-selected{
+  background-color: #073333 !important;
+}
+.ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline{
+  background-color: #009494 !important;
+}
+.ant-menu-title-content{
+  font-size: larger !important;
+}
+.ant-layout{
+  min-height: 100vh;
+}
+.ant-table-content{
+  height: 80vh;
+  border: 1px solid #dee2e6;
+  border-radius: 2%;
+}
+main{
+  overflow-y: scroll;
+  height: 82vh;
+  background-color: transparent !important;
+}
+main::-webkit-scrollbar{
+  width: 0px !important;
+}
+.logo{
+  background-color: #009494 !important;
+}
+.dropdown{
+  margin-top: 18px !important;
+}
+.dropdown li{
+  line-height: 35px !important;
+}
+.dropdown a{
+  text-decoration: none;
+  color: black !important;
+}
+.namail{
+  line-height: 0px;
+}
+.namail h5{
+  font-size: 14px;
+}
+.namail p{
+  font-size: 12px;
+}
+.ant-layout-header div .badge{
+  top: 16px;
+  right: -6px;
+}
+.ant-btn{
+  height: 45px !important;
+}
+.error{
+  color: red;
+  font-size: 14px;
+}

@@ -1,0 +1,41 @@
+:root{
+  --color-000000e0:#000000e0;
+  --color-008080: #008080 ;
+  --color-ff0000: #ff0000;
+  --color-008000: #008000;
+  --color-828599: #828599;
+  --color-ced4da: #ced4da;
+}
+body{
+  font-family: Roboto, sans-serif;
+}
+.green{
+  color: var(--color-008000);
+}
+.red{
+  color: var(--color-ff0000);
+}
+.btn{
+  color: white !important;
+}
+.btn-success{
+  background-color: var(--color-008080) !important;
+}
+.form-control{
+  box-shadow: none;
+  border-color: var(--color-ced4da);
+}
+.title{
+  font-size: 28px;
+  font-family: Roboto !important;
+}
+.sub-title {
+  font-size: 24px;
+  font-family: Roboto !important;
+}
+.desc{
+  color: var(--color-828599);
+}
+.recent-orders{
+  height: 552px !important;
+}
