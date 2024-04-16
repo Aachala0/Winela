@@ -185,7 +185,7 @@ const MainLayout = () => {
               <span className="fs-5">
                 <AiOutlineBell />
               </span>
-              <span className="badge bg-info rounded-circle position-absolute">
+              <span className="badge bg-danger rounded-circle position-absolute">
                 1
               </span>
             </div>

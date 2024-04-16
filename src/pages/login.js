@@ -39,7 +39,7 @@ const Login = () => {
     }
   }, [user, isError, isSuccess, isLoading]);
   return (
-    <div className="py-5" style={{ background: "#ffb379", minHeight: "100vh" }}>
+    <div className="py-5" style={{ background: "#7D0A0A", minHeight: "100vh" }}>
       <br />
       <br />
       <div className="my-5 w-25 bg-white rounded-3 mx-auto p-4">
@@ -79,10 +79,10 @@ const Login = () => {
           </div>
           <Button
             className="border-0 py-2 fw-bold w-100 text-dark text-center text-decoration-none fs-5"
-            style={{ background: "#ffb379" }}
+            style={{ background: "#7D0A0A" }}
             htmlType="submit"
           >
-            Submit
+            <span style={{ color: "white" }}>Submit</span>
           </Button>
         </form>
       </div>

@@ -47,7 +47,7 @@ const Dashboard = () => {
     yField: "value",
     style: {
       fill: ({ type }) => {
-        return "#008080";
+        return "#7D0A0A";
       },
     },
     label: {

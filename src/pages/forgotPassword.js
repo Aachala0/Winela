@@ -3,7 +3,7 @@ import CustomInput from "../components/customInput"; // Import the CustomInput c
 
 const forgotPassword = () => {
   return (
-    <div className="py-5" style={{ background: "#ffb379", minHeight: "100vh" }}>
+    <div className="py-5" style={{ background: "#7D0A0A", minHeight: "100vh" }}>
       <br />
       <br />
       <div className="my-5 w-25 bg-white rounded-3 mx-auto p-4">
@@ -13,10 +13,10 @@ const forgotPassword = () => {
           <CustomInput type="text" label="Email Address" i_id="email" />
           <button
             className="border-0 px- py-2 fw-bold w-100"
-            style={{ background: "#ffb379" }}
+            style={{ background: "#7D0A0A" }}
             type="Submit"
           >
-            Send Link
+            <span style={{ color: "white" }}>Send Link</span>
           </button>
         </form>
       </div>
