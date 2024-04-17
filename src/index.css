@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo-footer{
+    margin-left: 100px;
+}
+.text-footer{
+    margin-left: 125px;
+}
