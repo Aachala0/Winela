@@ -1,0 +1,6 @@
+#install the following
+npm create vite@latest frontend // to create frontend folder/app
+//inside frontend folder
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install lucide-react
