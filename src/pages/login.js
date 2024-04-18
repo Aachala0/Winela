@@ -43,7 +43,7 @@ const Login = () => {
       <br />
       <br />
       <div className="my-5 w-25 bg-white rounded-3 mx-auto p-4">
-        <h3 className="text-center">Login In</h3>
+        <h3 className="text-center">Log In</h3>
         <p className="text-center">Login to continue:)</p>
         <div className="error text-center">
           {message.message === "Rejected" ? "You are not an Admin" : ""}
@@ -75,7 +75,8 @@ const Login = () => {
             {formik.touched.password && formik.errors.password}
           </div>
           <div className="mb-3 text-center">
-            <Link to="/forgot-password">Forgot Password?</Link>
+            <Link to="/forgot-password">Forgot Password?</Link> <br />
+            <Link to="/forgot-password">Don't have an account? Signup</Link>
           </div>
           <Button
             className="border-0 py-2 fw-bold w-100 text-dark text-center text-decoration-none fs-5"
