@@ -68,7 +68,7 @@ const Footer = () => {
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="contact"
                   >
                     Help
                   </a>
@@ -76,7 +76,7 @@ const Footer = () => {
                 <li className="mb-4">
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="contact"
                   >
                     Contact Us
                   </a>
@@ -84,7 +84,7 @@ const Footer = () => {
                 <li>
                   <a
                     className=" text-base font-medium text-gray-900 hover:text-gray-700"
-                    href="#"
+                    href="contact"
                   >
                     Customer Support
                   </a>
