@@ -42,5 +42,5 @@ app.use(notFound);
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`);
+  console.log(`listening on port http://localhost:${PORT}`);
 });
