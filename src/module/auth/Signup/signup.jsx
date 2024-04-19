@@ -2,10 +2,13 @@ import { useEffect, React } from "react";
 import { object, string, ref } from "yup";
 import { useFormik } from "formik";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const base_url = import.meta.env.VITE_API_URL;
 
 const Signup = () => {
+  const navigate = useNavigate();
+
   let userSchema = object({
     firstName: string().required(),
     lastName: string().required(),
@@ -43,6 +46,7 @@ const Signup = () => {
       .post(`${base_url}/api/user/register`, data)
       .then((res) => {
         console.log(res.data);
+        navigate("/login");
         if (setShowModal) {
           setShowModal(false);
         }

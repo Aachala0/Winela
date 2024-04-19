@@ -89,7 +89,7 @@ const Contact = () => {
                   </div>
                   <button
                     type="button"
-                    class="w-full rounded-md bg-red-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-400/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                    class="w-full rounded-md bg-red-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-900/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                   >
                     Send Message
                   </button>
