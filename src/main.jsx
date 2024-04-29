@@ -7,6 +7,7 @@ import Home from "./module/Home/index.jsx";
 import Signup from "./module/auth/Signup/signup.jsx";
 import Login from "./module/auth/Login/login.jsx";
 import Contact from "./module/Contact/contact.jsx";
+import Cart from "./module/Cart/cart.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "cart",
+        element: <Cart />,
       },
     ],
   },

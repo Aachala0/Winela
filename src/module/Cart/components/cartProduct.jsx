@@ -34,7 +34,7 @@ export default function Product({ product }) {
             type="button"
             className="mt-4 w-full rounded-sm bg-red-800 px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-red-900/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
           >
-            Add to Cart
+            Save Cart
           </button>
         </div>
       </div>

@@ -55,7 +55,7 @@ const Navbar = () => {
 
         <div className="flex grow justify-end">
           <div className="mr-4" style={{ width: "30px", height: "30px" }}>
-            <a href="#">
+            <a href="/cart">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
