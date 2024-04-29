@@ -6,6 +6,7 @@ const dotenv = require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 const authRouter = require("./routes/authRoutes");
 const productRouter = require("./routes/productRoute");
+const uploadFileRouter = require("./routes/uploadRoute");
 const blogRouter = require("./routes/blogRoute");
 const CouponRouter = require("./routes/couponRoute");
 const PrdtCategoryRouter = require("./routes/PrdtCategoryRoute");
@@ -31,12 +32,15 @@ app.use(cookieParser());
 app.use("/api/user", authRouter);
 app.use("/api/product", productRouter);
 app.use("/api/blog", blogRouter);
+app.use("/api/upload-files", uploadFileRouter);
 app.use("/api/prdtcategory", PrdtCategoryRouter);
 app.use("/api/blogcategory", BlogCategoryRouter);
 app.use("/api/brand", BrandRouter);
 app.use("/api/coupon", CouponRouter);
 app.use("/api/color", ColorRouter);
 app.use("/api/enquiry", EnquiryRouter);
+
+app.use(`/api/uploads`, express.static("uploads"));
 
 app.use(notFound);
 app.use(errorHandler);
