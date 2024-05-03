@@ -356,7 +356,10 @@ const getWishlist = asyncHandler(async (req, res) => {
   const { _id } = req.user;
   validateMongodbId(_id);
   try {
-    const findUser = await User.findById(_id).populate("wishList");
+    const findUser = await User.findById(_id).populate({
+      path: "wishList",
+      select: "id title description category",
+    });
     res.json(findUser);
   } catch (e) {
     throw new Error(e);
