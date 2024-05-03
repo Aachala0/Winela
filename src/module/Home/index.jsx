@@ -1,10 +1,10 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { base_url } from "../../constants";
 import Product from "./components/Product";
 
 const Home = () => {
-  const [product, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     getAllProducts();
@@ -20,20 +20,28 @@ const Home = () => {
         console.log(err);
       });
   };
+
+  const displayProductsByCategory = (category) => {
+    return (
+      <>
+        <h3 className="text-left ml-16 font-semibold text-xl mt-4">
+          {category}
+        </h3>
+        <div className="mx-auto grid w-full max-w-6xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
+          {products
+            .filter((product) => product.category === category)
+            .map((product) => (
+              <Product key={product._id} product={product} />
+            ))}
+        </div>
+      </>
+    );
+  };
+
   return (
     <>
-      <h3 className="text-left ml-16 font-semibold text-xl mt-4">Featured</h3>
-      <div className="mx-auto grid w-full max-w-6xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
-        {product.map((product, i) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
-      <h3 className="text-left ml-16 font-semibold text-xl mt-4">Special</h3>
-      <div className="mx-auto grid w-full max-w-6xl items-center space-y-4 px-2 py-10 md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-4">
-        {product.map((product, i) => (
-          <Product key={product._id} product={product} />
-        ))}
-      </div>
+      {displayProductsByCategory("Red Wine")}
+      {displayProductsByCategory("White Wine")}
     </>
   );
 };

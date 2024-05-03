@@ -12,7 +12,7 @@ export default function Product({ product }) {
         />
         <div className="p-4">
           <h1 className="inline-flex items-center text-lg font-semibold">
-            {product.title}
+            <a href="productDetail">{product.title}</a>
           </h1>
           <p className="mt-3 text-sm text-gray-600">
             {product.description && (
