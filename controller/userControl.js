@@ -380,7 +380,6 @@ const userCarts = asyncHandler(async (req, res) => {
       let object = {};
       object.product = cart[i]._id;
       object.count = cart[i].count;
-      object.color = cart[i].color;
 
       let getPrice = await Product.findById(cart[i]._id).select("price").exec();
       object.price = getPrice.price;

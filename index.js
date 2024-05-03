@@ -13,6 +13,7 @@ const PrdtCategoryRouter = require("./routes/PrdtCategoryRoute");
 const BlogCategoryRouter = require("./routes/blogCatRoute");
 const BrandRouter = require("./routes/brandRoute");
 const ColorRouter = require("./routes/colorRoute");
+const cartRoute = require("./routes/cartRoute");
 const EnquiryRouter = require("./routes/enquiryRoute");
 const bodyParser = require("body-parser");
 const { notFound, errorHandler } = require("./middlewares/errorHandler");
@@ -38,6 +39,7 @@ app.use("/api/blogcategory", BlogCategoryRouter);
 app.use("/api/brand", BrandRouter);
 app.use("/api/coupon", CouponRouter);
 app.use("/api/color", ColorRouter);
+app.use("/api/carts", cartRoute);
 app.use("/api/enquiry", EnquiryRouter);
 
 app.use(`/api/uploads`, express.static("uploads"));
