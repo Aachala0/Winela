@@ -147,43 +147,7 @@ const AddProduct = () => {
           <div className="error">
             {formik.touched.category && formik.errors.category}
           </div>
-          <select
-            name="tags"
-            onChange={formik.handleChange("tags")}
-            onBlur={formik.handleBlur("tags")}
-            value={formik.values.tags}
-            className="form-control py-3 mb-3"
-            id=""
-          >
-            <option value="" disabled>
-              Select Category
-            </option>
-            <option value="featured">Featured</option>
-            <option value="popular">Popular</option>
-            <option value="special">Special</option>
-          </select>
-          <div className="error">
-            {formik.touched.tags && formik.errors.tags}
-          </div>
-          <select
-            className="form-control py-3 mb-3"
-            name="brand"
-            onChange={formik.handleChange("brand")}
-            onBlur={formik.handleBlur("brand")}
-            value={formik.values.brand}
-          >
-            <option>Select Product Brand</option>
-            {brandState.map((i, j) => {
-              return (
-                <option key={j} value={i.title}>
-                  {i.title}
-                </option>
-              );
-            })}
-          </select>
-          <div className="error">
-            {formik.touched.brand && formik.errors.brand}
-          </div>
+
           <Select
             mode="multiple"
             allowClear
