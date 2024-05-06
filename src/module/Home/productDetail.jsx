@@ -14,7 +14,7 @@ export default function ProductOne() {
   const fetchProductDetails = async () => {
     try {
       // Replace 'productId' with the actual product ID from your database
-      const productId = "662268042eaf477b9dce8283";
+      const productId = "6638767442652960c0bc1514";
       const response = await axios.get(`${base_url}/api/product/${productId}`);
       setProduct(response.data); // Assuming your API returns product details
     } catch (error) {
@@ -36,7 +36,7 @@ export default function ProductOne() {
                   <div className="relative flex items-center justify-center">
                     <img
                       alt="Product gallery 1"
-                      src="src/assets/img/wines_4.jpg"
+                      src="src/assets/img/Red-label.png"
                       width={450}
                       height={390}
                       className="rounded-lg object-cover md:h-[300px] md:w-full lg:h-full"
@@ -49,9 +49,9 @@ export default function ProductOne() {
                 </div>
                 <div className="flex gap-2 xl:flex-col">
                   {[
-                    "src/assets/img/wines_4.jpg",
-                    "src/assets/img/wines_4.jpg",
-                    "src/assets/img/wines_4.jpg",
+                    "src/assets/img/Red-label.png",
+                    "src/assets/img/Red-label.png",
+                    "src/assets/img/Red-label.png",
                   ].map((image, index) => (
                     <div
                       key={image}

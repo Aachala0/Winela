@@ -5,7 +5,7 @@ export default function Product({ product }) {
     <>
       <div className="rounded-md border">
         <img
-          src="src/assets/img/wines_4.jpg"
+          src="src/assets/img/Red-label.png"
           alt="Laptop"
           className="aspect-[16/9] w-full rounded-md md:aspect-auto md:h-[300px] lg:h-[200px]"
           style={{ objectFit: "contain" }}

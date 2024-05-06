@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <>
       {displayProductsByCategory("Red Wine")}
-      {displayProductsByCategory("White Wine")}
+      {displayProductsByCategory("Special")}
     </>
   );
 };

@@ -9,6 +9,8 @@ import Login from "./module/auth/Login/login.jsx";
 import Contact from "./module/Contact/contact.jsx";
 import Cart from "./module/Cart/cart.jsx";
 import ProductOne from "./module/Home/productDetail.jsx";
+import { Checkout } from "./module/Cart/checkout.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "productDetail",
         element: <ProductOne />,
+      },
+      {
+        path: "checkout",
+        element: <Checkout />,
       },
     ],
   },
